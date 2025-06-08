@@ -1,5 +1,7 @@
 package sabishiikoto.wordguess;
 
+import java.util.Objects;
+
 public class Word {
     private final String word;
     private final int wordLength;
@@ -41,4 +43,5 @@ public class Word {
         }
         return string;
     }
+
 }

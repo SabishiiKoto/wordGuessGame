@@ -15,7 +15,7 @@
         <menus>
             <Menu mnemonicParsing="false" text="File">
               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#loadGameTrigger" text="Unspecified Action" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadGameTrigger" text="Load Game" />
                 <MenuItem mnemonicParsing="false" onAction="#saveGameTrigger" text="Save Game" />
               </items>
             </Menu>
@@ -30,37 +30,37 @@
    <center>
       <AnchorPane prefHeight="514.0" prefWidth="329.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="labelForWord" layoutX="56.0" layoutY="57.0" prefHeight="170.0" prefWidth="487.0">
+            <Label fx:id="labelForWord" alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="57.0" prefHeight="170.0" prefWidth="487.0" textAlignment="CENTER">
                <font>
-                  <Font size="24.0" />
+                  <Font size="36.0" />
                </font>
             </Label>
-            <Button layoutX="30.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonQ" prefHeight="50.0" prefWidth="45.0" text="Q" />
-            <Button layoutX="85.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonW" prefHeight="50.0" prefWidth="45.0" text="W" />
-            <Button layoutX="140.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonE" prefHeight="50.0" prefWidth="45.0" text="E" />
-            <Button layoutX="195.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonR" prefHeight="50.0" prefWidth="45.0" text="R" />
-            <Button layoutX="250.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonT" prefHeight="50.0" prefWidth="45.0" text="T" />
-            <Button layoutX="305.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonY" prefHeight="50.0" prefWidth="45.0" text="Y" />
-            <Button layoutX="360.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonU" prefHeight="50.0" prefWidth="45.0" text="U" />
-            <Button layoutX="415.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonI" prefHeight="50.0" prefWidth="45.0" text="I" />
-            <Button layoutX="470.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonO" prefHeight="50.0" prefWidth="45.0" text="O" />
-            <Button layoutX="525.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonP" prefHeight="50.0" prefWidth="45.0" text="P" />
-            <Button layoutX="57.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonA" prefHeight="50.0" prefWidth="45.0" text="A" />
-            <Button layoutX="112.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonS" prefHeight="50.0" prefWidth="45.0" text="S" />
-            <Button layoutX="167.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonD" prefHeight="50.0" prefWidth="45.0" text="D" />
-            <Button layoutX="222.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonF" prefHeight="50.0" prefWidth="45.0" text="F" />
-            <Button layoutX="277.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonG" prefHeight="50.0" prefWidth="45.0" text="G" />
-            <Button layoutX="332.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonH" prefHeight="50.0" prefWidth="45.0" text="H" />
-            <Button layoutX="387.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonJ" prefHeight="50.0" prefWidth="45.0" text="J" />
-            <Button layoutX="442.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonK" prefHeight="50.0" prefWidth="45.0" text="K" />
-            <Button layoutX="112.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonZ" prefHeight="50.0" prefWidth="45.0" text="Z" />
-            <Button layoutX="167.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonX" prefHeight="50.0" prefWidth="45.0" text="X" />
-            <Button layoutX="222.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonC" prefHeight="50.0" prefWidth="45.0" text="C" />
-            <Button layoutX="277.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonV" prefHeight="50.0" prefWidth="45.0" text="V" />
-            <Button layoutX="332.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonB" prefHeight="50.0" prefWidth="45.0" text="B" />
-            <Button layoutX="387.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonN" prefHeight="50.0" prefWidth="45.0" text="N" />
-            <Button layoutX="442.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonM" prefHeight="50.0" prefWidth="45.0" text="M" />
-            <Button layoutX="498.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonL" prefHeight="50.0" prefWidth="45.0" text="L" />
+            <Button fx:id="buttonForQ" layoutX="30.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonQ" prefHeight="50.0" prefWidth="45.0" text="Q" />
+            <Button fx:id="buttonForW" layoutX="85.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonW" prefHeight="50.0" prefWidth="45.0" text="W" />
+            <Button fx:id="buttonForE" layoutX="140.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonE" prefHeight="50.0" prefWidth="45.0" text="E" />
+            <Button fx:id="buttonForR" layoutX="195.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonR" prefHeight="50.0" prefWidth="45.0" text="R" />
+            <Button fx:id="buttonForT" layoutX="250.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonT" prefHeight="50.0" prefWidth="45.0" text="T" />
+            <Button fx:id="buttonForY" layoutX="305.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonY" prefHeight="50.0" prefWidth="45.0" text="Y" />
+            <Button fx:id="buttonForU" layoutX="360.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonU" prefHeight="50.0" prefWidth="45.0" text="U" />
+            <Button fx:id="buttonForI" layoutX="415.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonI" prefHeight="50.0" prefWidth="45.0" text="I" />
+            <Button fx:id="buttonForO" layoutX="470.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonO" prefHeight="50.0" prefWidth="45.0" text="O" />
+            <Button fx:id="buttonForP" layoutX="525.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonP" prefHeight="50.0" prefWidth="45.0" text="P" />
+            <Button fx:id="buttonForA" layoutX="57.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonA" prefHeight="50.0" prefWidth="45.0" text="A" />
+            <Button fx:id="buttonForS" layoutX="112.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonS" prefHeight="50.0" prefWidth="45.0" text="S" />
+            <Button fx:id="buttonForD" layoutX="167.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonD" prefHeight="50.0" prefWidth="45.0" text="D" />
+            <Button fx:id="buttonForF" layoutX="222.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonF" prefHeight="50.0" prefWidth="45.0" text="F" />
+            <Button fx:id="buttonForG" layoutX="277.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonG" prefHeight="50.0" prefWidth="45.0" text="G" />
+            <Button fx:id="buttonForH" layoutX="332.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonH" prefHeight="50.0" prefWidth="45.0" text="H" />
+            <Button fx:id="buttonForJ" layoutX="387.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonJ" prefHeight="50.0" prefWidth="45.0" text="J" />
+            <Button fx:id="buttonForK" layoutX="442.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonK" prefHeight="50.0" prefWidth="45.0" text="K" />
+            <Button fx:id="buttonForZ" layoutX="112.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonZ" prefHeight="50.0" prefWidth="45.0" text="Z" />
+            <Button fx:id="buttonForX" layoutX="167.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonX" prefHeight="50.0" prefWidth="45.0" text="X" />
+            <Button fx:id="buttonForC" layoutX="222.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonC" prefHeight="50.0" prefWidth="45.0" text="C" />
+            <Button fx:id="buttonForV" layoutX="277.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonV" prefHeight="50.0" prefWidth="45.0" text="V" />
+            <Button fx:id="buttonForB" layoutX="332.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonB" prefHeight="50.0" prefWidth="45.0" text="B" />
+            <Button fx:id="buttonForN" layoutX="387.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonN" prefHeight="50.0" prefWidth="45.0" text="N" />
+            <Button fx:id="buttonForM" layoutX="442.5" layoutY="369.0" mnemonicParsing="false" onAction="#buttonM" prefHeight="50.0" prefWidth="45.0" text="M" />
+            <Button fx:id="buttonForL" layoutX="498.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonL" prefHeight="50.0" prefWidth="45.0" text="L" />
             <Label layoutX="56.0" layoutY="26.0" text="GUESS THE WORD">
                <font>
                   <Font name="System Bold" size="14.0" />
@@ -76,16 +76,21 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button layoutX="481.0" layoutY="453.0" mnemonicParsing="false" onAction="#buttonForNext" text="NEXT WORD">
+            <Button fx:id="buttonNext" layoutX="481.0" layoutY="453.0" mnemonicParsing="false" onAction="#buttonForNext" text="NEXT WORD">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Label layoutX="14.0" layoutY="457.0" text="Total Score: " />
+            <Label layoutX="14.0" layoutY="457.0" text="Total Point: " />
             <Label layoutX="14.0" layoutY="436.0" text="Level: " />
             <Label fx:id="labelForLevel" layoutX="49.0" layoutY="436.0" />
             <Label fx:id="labelForScore" layoutX="80.0" layoutY="457.0" />
             <Label fx:id="labelForError" layoutX="16.0" layoutY="479.0" />
+            <Button fx:id="buttonHint" layoutX="428.0" layoutY="453.0" mnemonicParsing="false" onAction="#hintTrigger" text="HINT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </center>

@@ -8,7 +8,7 @@ public class Game {
         this.score = score;
     }
     public void setLevel(){
-        this.level++;
+        this.level += 1;
     }
 
     public void setScore(int score){
@@ -19,5 +19,9 @@ public class Game {
     }
     public int getScore(){
         return this.score;
+    }
+
+    public void hintUsed(){
+        this.score -= 1;
     }
 }

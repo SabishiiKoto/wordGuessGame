@@ -1,24 +1,24 @@
 package sabishiikoto.wordguess;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Data {
+    private static ArrayList<Word> wordArrayList = new ArrayList<>();
     public static ArrayList<Word> Reader(){
-        String fileName = "word.csv";
+        String fileName = "word.txt";
         File file = new File(fileName);
-        System.out.println("hello");
         ArrayList<Word> wordList = new ArrayList<>();
         if (file.exists()) {
             try (FileReader fileReader = new FileReader(file.getAbsolutePath())) {
-                System.out.println("Hello");
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
                 String line = bufferedReader.readLine();
-                System.out.println(line);
                 while (line != null) {
-                    String[] stringList = line.split(",");
+                    line = line.replaceAll("\\n$","");
+                    String[] stringList = line.split(" ");
                     for (String item : stringList) {
-                        Word word = new Word(item);
+                        Word word = new Word(item.toUpperCase());
                         wordList.add(word);
                     }
                     line = bufferedReader.readLine();
@@ -35,6 +35,7 @@ public class Data {
         return null;
     }
     public static Game progressReader(){
+        wordArrayList.clear();
         File file = new File("savedProgress.txt");
         try(BufferedReader bufferedReader = new BufferedReader(new FileReader(file))){
             String line = bufferedReader.readLine();
@@ -42,6 +43,16 @@ public class Data {
             line = bufferedReader.readLine();
             int score = Integer.parseInt(line);
             Game game = new Game(level, score);
+            line = bufferedReader.readLine();
+            while (line != null){
+                line.trim();
+                String[] wordStringList = line.split(" ");
+                for (String wordString : wordStringList){
+                    Word word = new Word(wordString);
+                    wordArrayList.add(word);
+                }
+                line = bufferedReader.readLine();
+            }
             return game;
         }
         catch (IOException e){
@@ -49,16 +60,24 @@ public class Data {
         }
         return null;
     }
-    public static void Writer(Game game){
+    public static boolean Writer(Game game, ArrayList<Word> wordList){
         File file = new File("savedProgress.txt");
         try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))){
-            bufferedWriter.write(game.getLevel());
-            bufferedWriter.write(game.getScore());
+            bufferedWriter.write(game.getLevel() + "\n");
+            bufferedWriter.write(game.getScore() + "\n");
+            for (Word word : wordList){
+                bufferedWriter.write(word.getWord() + " ");
+            }
             bufferedWriter.flush();
+            return true;
         }
         catch (IOException e){
 
         }
+        return false;
     }
 
+    public static ArrayList<Word> getSavedWordList(){
+        return wordArrayList;
+    }
 }
