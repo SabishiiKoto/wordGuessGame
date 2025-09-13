@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Data {
     private static ArrayList<Word> wordArrayList = new ArrayList<>();
     public static ArrayList<Word> Reader(){
-        String fileName = "word.txt";
+        String fileName = "C:\\Users\\AnhNg\\IdeaProjects\\Java Personal Projects\\wordGuess\\src\\main\\resources\\word.txt";
         File file = new File(fileName);
         ArrayList<Word> wordList = new ArrayList<>();
         if (file.exists()) {

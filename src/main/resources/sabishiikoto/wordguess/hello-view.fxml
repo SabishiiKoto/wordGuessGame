@@ -82,8 +82,8 @@
                </font>
             </Button>
             <Label layoutX="14.0" layoutY="457.0" text="Total Point: " />
-            <Label layoutX="14.0" layoutY="436.0" text="Level: " />
-            <Label fx:id="labelForLevel" layoutX="49.0" layoutY="436.0" />
+            <Label layoutX="14.0" layoutY="436.0" prefHeight="18.0" prefWidth="78.0" text="Passed Round:" />
+            <Label fx:id="labelForLevel" contentDisplay="CENTER" layoutX="98.0" layoutY="436.0" prefHeight="18.0" prefWidth="48.0" />
             <Label fx:id="labelForScore" layoutX="80.0" layoutY="457.0" />
             <Label fx:id="labelForError" layoutX="16.0" layoutY="479.0" />
             <Button fx:id="buttonHint" layoutX="428.0" layoutY="453.0" mnemonicParsing="false" onAction="#hintTrigger" text="HINT">

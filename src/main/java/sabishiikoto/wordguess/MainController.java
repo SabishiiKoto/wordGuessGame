@@ -119,9 +119,9 @@ public class MainController {
     @FXML
     void aboutTrigger(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("About!");
+        alert.setTitle("About This Word Guess Game!");
         alert.setHeaderText("Information and Contact");
-        alert.setContentText("This is a word guess game!");
+        alert.setContentText("Please notice me if there is any error.\nFor contact, check out my GitHub:\nhttps://github.com/SabishiiKoto");
         alert.showAndWait();
     }
 
@@ -285,7 +285,7 @@ public class MainController {
     public void setLabelForGuessedChar(char letter){
         labelForError.setText("");
         String indexString = word.wordCheck(letter);
-        if (indexString != "") {
+        if (!indexString.isEmpty()) {
             String[] indexList = indexString.split(",");
             for (String item : indexList){
                 int index = Integer.parseInt(item) * 2;
@@ -311,8 +311,6 @@ public class MainController {
             labelForError.setText("There is no more word!");
         }
         else {
-            game.setLevel();
-            game.setScore(2);
             normalState();
         }
     }
@@ -366,11 +364,9 @@ public class MainController {
             labelForError.setText("Game is unable to load");
         }
     }
-
+    // Win state
     public void win(StringBuilder wordBuild){
         labelForError.setText("");
-        // Check the guess attempt left
-//        word.setStatus();
         int indexOfWord = Function.getIndexOfWord();
         wordList.remove(indexOfWord);
         String wordString = wordBuild.toString();
@@ -405,10 +401,12 @@ public class MainController {
             buttonForY.setDisable(true);
             buttonForZ.setDisable(true);
             labelForError.setTextFill(Color.GREEN);
+            game.setScore(2);
+            game.setLevel();
             labelForError.setText("You guessed it right!");
         }
     }
-
+    // Normal state = playing
     public void normalState(){
         if (word.getWordLength() >= 7){
             turn = 7;
@@ -453,6 +451,8 @@ public class MainController {
         buttonForY.setDisable(false);
         buttonForZ.setDisable(false);
     }
+
+    // Check the attempt
     public void outOfAttempt(int attempt){
         if (attempt == 0){
             loseTimes++;
@@ -499,13 +499,16 @@ public class MainController {
 
     @FXML
     public void initialize(){
-        game = new Game(1,0);
+        // Set the game
+        game = new Game(0,0);
         buttonNext.setDisable(true);
         buttonHint.setDisable(false);
         labelForGuessNumber.setText(Integer.toString(turn));
         labelForLevel.setText(Integer.toString(game.getLevel()));
         labelForScore.setText(Integer.toString(game.getScore()));
+        // Read the word.txt file
         wordList = Data.Reader();
+        // Pick a random word
         if (wordList != null) {
             word = Function.wordPick(wordList);
             int wordLength = word.getWordLength();
