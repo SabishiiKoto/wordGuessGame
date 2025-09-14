@@ -8,18 +8,18 @@ public class Function {
         int loop = 0;
         Random random = new Random();
         indexOfWord = random.nextInt(0,wordList.size());
-        word = wordList.get(indexOfWord);
-        while (word.getStatus()){
-            indexOfWord = random.nextInt(0,wordList.size());
-            word = wordList.get(indexOfWord);
-            loop++;
-//            if (loop == 5){
-//                break;
-//            }
-        }
-        if (loop == 5){
-            return null;
-        }
+//        word = wordList.get(indexOfWord);
+//        while (word.getStatus()){
+//            indexOfWord = random.nextInt(0,wordList.size());
+//            word = wordList.get(indexOfWord);
+//            loop++;
+////            if (loop == 5){
+////                break;
+////            }
+//        }
+//        if (loop == 5){
+//            return null;
+//        }
         return wordList.get(indexOfWord);
     }
 

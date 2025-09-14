@@ -7,6 +7,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 
@@ -145,6 +147,11 @@ public class MainController {
         alert.setTitle("About This Word Guess Game!");
         alert.setHeaderText("Information and Contact");
         alert.setContentText("Please notice me if there is any error.\nFor contact, check out my GitHub:\nhttps://github.com/SabishiiKoto");
+        Image image = new Image(getClass().getResource("/assets/Sabii's avatar.jpeg").toExternalForm());
+        ImageView imageView = new ImageView(image);
+        imageView.setFitWidth(70);
+        imageView.setFitHeight(70);
+        alert.setGraphic(imageView);
         alert.showAndWait();
     }
 
@@ -678,12 +685,7 @@ public class MainController {
     }
     // Normal state = playing
     public void normalState(){
-        if (word.getWordLength() >= 7){
-            turn = 7;
-        }
-        else {
-            turn = word.getWordLength() + 2;
-        }
+        turn = 13 - word.getWordLength();
         labelForLevel.setText(Integer.toString(game.getLevel()));
         labelForScore.setText(Integer.toString(game.getScore()));
         labelForGuessNumber.setText(Integer.toString(turn));
@@ -764,6 +766,52 @@ public class MainController {
 
     @FXML
     public void initialize(){
+        // Set the appearance
+        menuBar.setStyle("-fx-background-color: #48b5d6;");
+
+        anchorPane.setStyle("-fx-background-color: #E8F9FD;");
+
+        String style = "-fx-text-fill: #083346;";
+        labelForTitle.setStyle(style);
+        labelForGuessNumber.setStyle(style);
+        labelForAttempt.setStyle(style);
+        labelForPassedRound.setStyle(style);
+        labelForLevel.setStyle(style);
+        labelForTotalPoint.setStyle(style);
+        labelForScore.setStyle(style);
+        labelForError.setStyle(style);
+        labelForWord.setStyle("-fx-background-color: #E8F9FD; -fx-text-fill: #046C95;");
+
+        style = "-fx-background-color: #B3E0EE; -fx-text-fill: #046C95;";
+        buttonForA.setStyle(style);
+        buttonForB.setStyle(style);
+        buttonForC.setStyle(style);
+        buttonForD.setStyle(style);
+        buttonForE.setStyle(style);
+        buttonForF.setStyle(style);
+        buttonForG.setStyle(style);
+        buttonForH.setStyle(style);
+        buttonForI.setStyle(style);
+        buttonForJ.setStyle(style);
+        buttonForK.setStyle(style);
+        buttonForL.setStyle(style);
+        buttonForM.setStyle(style);
+        buttonForN.setStyle(style);
+        buttonForO.setStyle(style);
+        buttonForP.setStyle(style);
+        buttonForQ.setStyle(style);
+        buttonForR.setStyle(style);
+        buttonForS.setStyle(style);
+        buttonForT.setStyle(style);
+        buttonForU.setStyle(style);
+        buttonForV.setStyle(style);
+        buttonForW.setStyle(style);
+        buttonForX.setStyle(style);
+        buttonForY.setStyle(style);
+        buttonForZ.setStyle(style);
+
+        buttonHint.setStyle("-fx-background-color: #48b5d6; -fx-text-fill: #E8F9FD;");
+        buttonNext.setStyle("-fx-background-color: #48b5d6; -fx-text-fill: #E8F9FD;");
         // Set the game
         game = new Game(0,0);
         buttonNext.setDisable(true);
@@ -777,12 +825,7 @@ public class MainController {
         if (wordList != null) {
             word = Function.wordPick(wordList);
             int wordLength = word.getWordLength();
-            if (wordLength >= 7){
-                turn = 7;
-            }
-            else {
-                turn = wordLength + 2;
-            }
+            turn = 13 - wordLength;
             labelForGuessNumber.setText(Integer.toString(turn));
             for (int i = 0; i < wordLength; i++) {
                 wordBuild.append("_ ");
