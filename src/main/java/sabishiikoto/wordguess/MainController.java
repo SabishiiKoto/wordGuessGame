@@ -1,10 +1,13 @@
 package sabishiikoto.wordguess;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuBar;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
@@ -20,7 +23,8 @@ public class MainController {
 
 
     @FXML
-    private Button buttonNext;
+    private AnchorPane anchorPane;
+
     @FXML
     private Button buttonForA;
 
@@ -103,18 +107,37 @@ public class MainController {
     private Button buttonHint;
 
     @FXML
-    private Label labelForGuessNumber;
+    private Button buttonNext;
+
+    @FXML
+    private Label labelForAttempt;
 
     @FXML
     private Label labelForError;
+
+    @FXML
+    private Label labelForGuessNumber;
+
     @FXML
     private Label labelForLevel;
+
+    @FXML
+    private Label labelForPassedRound;
 
     @FXML
     private Label labelForScore;
 
     @FXML
+    private Label labelForTitle;
+
+    @FXML
+    private Label labelForTotalPoint;
+
+    @FXML
     private Label labelForWord;
+
+    @FXML
+    private MenuBar menuBar;
 
     @FXML
     void aboutTrigger(ActionEvent event) {
@@ -123,6 +146,249 @@ public class MainController {
         alert.setHeaderText("Information and Contact");
         alert.setContentText("Please notice me if there is any error.\nFor contact, check out my GitHub:\nhttps://github.com/SabishiiKoto");
         alert.showAndWait();
+    }
+
+    @FXML
+    void blueTrigger(ActionEvent event) {
+        menuBar.setStyle("-fx-background-color: #48b5d6;");
+
+        anchorPane.setStyle("-fx-background-color: #E8F9FD;");
+
+        String style = "-fx-text-fill: #083346;";
+        labelForTitle.setStyle(style);
+        labelForGuessNumber.setStyle(style);
+        labelForAttempt.setStyle(style);
+        labelForPassedRound.setStyle(style);
+        labelForLevel.setStyle(style);
+        labelForTotalPoint.setStyle(style);
+        labelForScore.setStyle(style);
+        labelForError.setStyle(style);
+        labelForWord.setStyle("-fx-background-color: #E8F9FD; -fx-text-fill: #046C95;");
+
+        style = "-fx-background-color: #B3E0EE; -fx-text-fill: #046C95;";
+        buttonForA.setStyle(style);
+        buttonForB.setStyle(style);
+        buttonForC.setStyle(style);
+        buttonForD.setStyle(style);
+        buttonForE.setStyle(style);
+        buttonForF.setStyle(style);
+        buttonForG.setStyle(style);
+        buttonForH.setStyle(style);
+        buttonForI.setStyle(style);
+        buttonForJ.setStyle(style);
+        buttonForK.setStyle(style);
+        buttonForL.setStyle(style);
+        buttonForM.setStyle(style);
+        buttonForN.setStyle(style);
+        buttonForO.setStyle(style);
+        buttonForP.setStyle(style);
+        buttonForQ.setStyle(style);
+        buttonForR.setStyle(style);
+        buttonForS.setStyle(style);
+        buttonForT.setStyle(style);
+        buttonForU.setStyle(style);
+        buttonForV.setStyle(style);
+        buttonForW.setStyle(style);
+        buttonForX.setStyle(style);
+        buttonForY.setStyle(style);
+        buttonForZ.setStyle(style);
+
+        buttonHint.setStyle("-fx-background-color: #48b5d6; -fx-text-fill: #E8F9FD;");
+        buttonNext.setStyle("-fx-background-color: #48b5d6; -fx-text-fill: #E8F9FD;");
+
+    }
+    @FXML
+    void pinkTrigger(ActionEvent event) {
+        menuBar.setStyle("-fx-background-color: #EABEC3;");
+
+        anchorPane.setStyle("-fx-background-color: #FFF0F3;");
+
+        String style = "-fx-text-fill: #D0637C;";
+        labelForTitle.setStyle(style);
+        labelForGuessNumber.setStyle(style);
+        labelForAttempt.setStyle(style);
+        labelForPassedRound.setStyle(style);
+        labelForLevel.setStyle(style);
+        labelForTotalPoint.setStyle(style);
+        labelForScore.setStyle(style);
+        labelForError.setStyle(style);
+        labelForWord.setStyle("-fx-background-color: #FFF0F3; -fx-text-fill: #DD868C;");
+
+        style = "-fx-background-color: #F5DDE0  ; -fx-text-fill: #DD868C ;";
+        buttonForA.setStyle(style);
+        buttonForB.setStyle(style);
+        buttonForC.setStyle(style);
+        buttonForD.setStyle(style);
+        buttonForE.setStyle(style);
+        buttonForF.setStyle(style);
+        buttonForG.setStyle(style);
+        buttonForH.setStyle(style);
+        buttonForI.setStyle(style);
+        buttonForJ.setStyle(style);
+        buttonForK.setStyle(style);
+        buttonForL.setStyle(style);
+        buttonForM.setStyle(style);
+        buttonForN.setStyle(style);
+        buttonForO.setStyle(style);
+        buttonForP.setStyle(style);
+        buttonForQ.setStyle(style);
+        buttonForR.setStyle(style);
+        buttonForS.setStyle(style);
+        buttonForT.setStyle(style);
+        buttonForU.setStyle(style);
+        buttonForV.setStyle(style);
+        buttonForW.setStyle(style);
+        buttonForX.setStyle(style);
+        buttonForY.setStyle(style);
+        buttonForZ.setStyle(style);
+
+        buttonHint.setStyle("-fx-background-color: #EABEC3 ; -fx-text-fill: #FFF0F3 ;");
+        buttonNext.setStyle("-fx-background-color: #EABEC3 ; -fx-text-fill: #FFF0F3 ;");
+    }
+    @FXML
+    void greenTrigger(ActionEvent event) {
+        menuBar.setStyle("-fx-background-color: #549895;");
+
+        anchorPane.setStyle("-fx-background-color: #D6F5E9 ;");
+
+        String style = "-fx-text-fill: #245254;";
+        labelForTitle.setStyle(style);
+        labelForGuessNumber.setStyle(style);
+        labelForAttempt.setStyle(style);
+        labelForPassedRound.setStyle(style);
+        labelForLevel.setStyle(style);
+        labelForTotalPoint.setStyle(style);
+        labelForScore.setStyle(style);
+        labelForError.setStyle(style);
+        labelForWord.setStyle("-fx-background-color: #D6F5E9 ; -fx-text-fill: #387271;");
+
+        style = "-fx-background-color: #8EBCB1; -fx-text-fill: #387271 ;";
+        buttonForA.setStyle(style);
+        buttonForB.setStyle(style);
+        buttonForC.setStyle(style);
+        buttonForD.setStyle(style);
+        buttonForE.setStyle(style);
+        buttonForF.setStyle(style);
+        buttonForG.setStyle(style);
+        buttonForH.setStyle(style);
+        buttonForI.setStyle(style);
+        buttonForJ.setStyle(style);
+        buttonForK.setStyle(style);
+        buttonForL.setStyle(style);
+        buttonForM.setStyle(style);
+        buttonForN.setStyle(style);
+        buttonForO.setStyle(style);
+        buttonForP.setStyle(style);
+        buttonForQ.setStyle(style);
+        buttonForR.setStyle(style);
+        buttonForS.setStyle(style);
+        buttonForT.setStyle(style);
+        buttonForU.setStyle(style);
+        buttonForV.setStyle(style);
+        buttonForW.setStyle(style);
+        buttonForX.setStyle(style);
+        buttonForY.setStyle(style);
+        buttonForZ.setStyle(style);
+
+        buttonHint.setStyle("-fx-background-color: #549895; -fx-text-fill: #D6F5E9;");
+        buttonNext.setStyle("-fx-background-color: #549895; -fx-text-fill: #D6F5E9;");
+    }
+    @FXML
+    void vintageTrigger(ActionEvent event) {
+        menuBar.setStyle("-fx-background-color: #F6BD60;");
+
+        anchorPane.setStyle("-fx-background-color: #F7EDE2;");
+
+        String style = "-fx-text-fill: #F28482;";
+        labelForTitle.setStyle(style);
+        labelForGuessNumber.setStyle(style);
+        labelForAttempt.setStyle(style);
+        labelForPassedRound.setStyle(style);
+        labelForLevel.setStyle(style);
+        labelForTotalPoint.setStyle(style);
+        labelForScore.setStyle(style);
+        labelForError.setStyle(style);
+        labelForWord.setStyle("-fx-background-color: #F7EDE2; -fx-text-fill: #F6BD60;");
+
+        style = "-fx-background-color: #84A59D; -fx-text-fill: #F7EDE2;";
+        buttonForA.setStyle(style);
+        buttonForB.setStyle(style);
+        buttonForC.setStyle(style);
+        buttonForD.setStyle(style);
+        buttonForE.setStyle(style);
+        buttonForF.setStyle(style);
+        buttonForG.setStyle(style);
+        buttonForH.setStyle(style);
+        buttonForI.setStyle(style);
+        buttonForJ.setStyle(style);
+        buttonForK.setStyle(style);
+        buttonForL.setStyle(style);
+        buttonForM.setStyle(style);
+        buttonForN.setStyle(style);
+        buttonForO.setStyle(style);
+        buttonForP.setStyle(style);
+        buttonForQ.setStyle(style);
+        buttonForR.setStyle(style);
+        buttonForS.setStyle(style);
+        buttonForT.setStyle(style);
+        buttonForU.setStyle(style);
+        buttonForV.setStyle(style);
+        buttonForW.setStyle(style);
+        buttonForX.setStyle(style);
+        buttonForY.setStyle(style);
+        buttonForZ.setStyle(style);
+
+        buttonHint.setStyle("-fx-background-color: #F28482 ; -fx-text-fill: #F7EDE2;");
+        buttonNext.setStyle("-fx-background-color: #F28482 ; -fx-text-fill: #F7EDE2;");
+    }
+    @FXML
+    void darkTrigger(ActionEvent event) {
+        menuBar.setStyle("-fx-background-color: #2B2F6C;");
+
+        anchorPane.setStyle("-fx-background-color: #564779;");
+
+        String style = "-fx-text-fill: #DE978F;";
+        labelForTitle.setStyle(style);
+        labelForGuessNumber.setStyle(style);
+        labelForAttempt.setStyle(style);
+        labelForPassedRound.setStyle(style);
+        labelForLevel.setStyle(style);
+        labelForTotalPoint.setStyle(style);
+        labelForScore.setStyle(style);
+        labelForError.setStyle(style);
+        labelForWord.setStyle("-fx-background-color: #564779; -fx-text-fill: #DE978F;");
+
+        style = "-fx-background-color: #2B2F6C; -fx-text-fill: #DE978F;";
+        buttonForA.setStyle(style);
+        buttonForB.setStyle(style);
+        buttonForC.setStyle(style);
+        buttonForD.setStyle(style);
+        buttonForE.setStyle(style);
+        buttonForF.setStyle(style);
+        buttonForG.setStyle(style);
+        buttonForH.setStyle(style);
+        buttonForI.setStyle(style);
+        buttonForJ.setStyle(style);
+        buttonForK.setStyle(style);
+        buttonForL.setStyle(style);
+        buttonForM.setStyle(style);
+        buttonForN.setStyle(style);
+        buttonForO.setStyle(style);
+        buttonForP.setStyle(style);
+        buttonForQ.setStyle(style);
+        buttonForR.setStyle(style);
+        buttonForS.setStyle(style);
+        buttonForT.setStyle(style);
+        buttonForU.setStyle(style);
+        buttonForV.setStyle(style);
+        buttonForW.setStyle(style);
+        buttonForX.setStyle(style);
+        buttonForY.setStyle(style);
+        buttonForZ.setStyle(style);
+
+        buttonHint.setStyle("-fx-background-color: #000c43 ; -fx-text-fill: #DE978F;");
+        buttonNext.setStyle("-fx-background-color: #000c43 ; -fx-text-fill: #DE978F;");
+
     }
 
     @FXML
@@ -307,7 +573,6 @@ public class MainController {
         // Figure out how scoring works.
         word = Function.wordPick(wordList);
         if (word == null){
-            labelForError.setTextFill(Color.GREEN);
             labelForError.setText("There is no more word!");
         }
         else {
@@ -327,7 +592,6 @@ public class MainController {
             win(wordBuild);
         }
         else{
-            labelForError.setTextFill(Color.RED);
             labelForError.setText("Not enough point to use hint!");
         }
     }
@@ -336,11 +600,20 @@ public class MainController {
         labelForError.setText("");
         boolean succeeded = Data.Writer(game, wordList);
         if (succeeded){
-            labelForError.setTextFill(Color.GREEN);
             labelForError.setText("Game is saved!");
         }
         else{
-            labelForError.setTextFill(Color.RED);
+            labelForError.setText("Game is unable to save!");
+        }
+    }
+    @FXML
+    void saveExitTrigger(ActionEvent event) {
+        labelForError.setText("");
+        boolean succeeded = Data.Writer(game, wordList);
+        if (succeeded){
+            Platform.exit();
+        }
+        else{
             labelForError.setText("Game is unable to save!");
         }
     }
@@ -353,14 +626,12 @@ public class MainController {
         wordBuild.delete(0,wordBuild.length());
         game = Data.progressReader();
         if (game != null) {
-            labelForError.setTextFill(Color.GREEN);
             labelForError.setText("Game is loaded successfully!");
             wordList = Data.getSavedWordList();
             word = Function.wordPick(wordList);
             normalState();
         }
         else{
-            labelForError.setTextFill(Color.RED);
             labelForError.setText("Game is unable to load");
         }
     }
@@ -368,10 +639,10 @@ public class MainController {
     public void win(StringBuilder wordBuild){
         labelForError.setText("");
         int indexOfWord = Function.getIndexOfWord();
-        wordList.remove(indexOfWord);
         String wordString = wordBuild.toString();
         if (!wordString.contains("_")){
             winTimes++;
+            wordList.remove(indexOfWord);
             buttonHint.setDisable(true);
             buttonNext.setDisable(false);
             buttonForA.setDisable(true);
@@ -400,7 +671,6 @@ public class MainController {
             buttonForX.setDisable(true);
             buttonForY.setDisable(true);
             buttonForZ.setDisable(true);
-            labelForError.setTextFill(Color.GREEN);
             game.setScore(2);
             game.setLevel();
             labelForError.setText("You guessed it right!");
@@ -416,7 +686,6 @@ public class MainController {
         }
         labelForLevel.setText(Integer.toString(game.getLevel()));
         labelForScore.setText(Integer.toString(game.getScore()));
-        labelForGuessNumber.setTextFill(Color.BLACK);
         labelForGuessNumber.setText(Integer.toString(turn));
         wordBuild.delete(0, wordBuild.length());
         for (int i = 0; i < word.getWordLength(); i++) {
@@ -456,9 +725,7 @@ public class MainController {
     public void outOfAttempt(int attempt){
         if (attempt == 0){
             loseTimes++;
-            labelForGuessNumber.setTextFill(Color.RED);
             labelForGuessNumber.setText(Integer.toString(turn));
-            labelForError.setTextFill(Color.RED);
             labelForError.setText("Out of Attempt!");
             buttonHint.setDisable(true);
             buttonNext.setDisable(false);
@@ -488,11 +755,9 @@ public class MainController {
             buttonForX.setDisable(true);
             buttonForY.setDisable(true);
             buttonForZ.setDisable(true);
-            labelForError.setTextFill(Color.RED);
             labelForError.setText("Out of attempt, try harder next time!");
         }
         else{
-            labelForGuessNumber.setTextFill(Color.BLACK);
             labelForGuessNumber.setText(Integer.toString(turn));
         }
     }
@@ -525,7 +790,6 @@ public class MainController {
             labelForWord.setText(wordBuild.toString());
         }
         else{
-            labelForError.setTextFill(Color.RED);
             labelForError.setText("wordList is null!");
         }
     }
