@@ -34,6 +34,7 @@ A Word-Guess game with a GUI.
 java --module-path "C:(where SDK is saved)\lib" --add-modules javafx.controls,javafx.fxml -jar wordGuess.jar
 
 - For example my command is:
+
 java --module-path "C:\Users\AnhNg\IdeaProjects\openjfx-24_windows-x64_bin-sdk\javafx-sdk-24\lib" --add-modules javafx.controls,javafx.fxml -jar wordGuess.jar
 
 ## What I Learned / Why I Made This
