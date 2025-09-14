@@ -8,6 +8,13 @@ A Word-Guess game with a GUI.
 - Point and hint based game.
 - Let users pick a color theme out of 5 options.
 
+<p align="left">
+  <img src= "https://github.com/SabishiiKoto/wordGuessGame/blob/master/src/main/resources/assets/blue.png?raw=true" width = "300" height = "250">
+  <img src= "https://github.com/SabishiiKoto/wordGuessGame/blob/master/src/main/resources/assets/green.png?raw=true" width= "300" height = "250">
+  
+</p>
+  
+
 ## Technologies Used
 - Language: Java
 - GUI Library: JavaFX, SceneBuilder
