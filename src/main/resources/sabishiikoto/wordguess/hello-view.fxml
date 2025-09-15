@@ -37,115 +37,115 @@
         </menus>
       </MenuBar>
    </top>
-   <left>
-      <AnchorPane fx:id="anchorPane" prefHeight="514.0" prefWidth="631.0" BorderPane.alignment="CENTER">
+   <bottom>
+      <AnchorPane fx:id="anchorPane" prefHeight="514.0" prefWidth="712.0" BorderPane.alignment="CENTER">
          <children>
             <Label fx:id="labelForWord" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="56.4" layoutY="60.0" prefHeight="170.0" prefWidth="487.0" textAlignment="CENTER">
                <font>
                   <Font size="44.0" />
                </font>
             </Label>
-            <Button fx:id="buttonForQ" layoutX="30.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonQ" prefHeight="50.0" prefWidth="45.0" text="Q">
+            <Button fx:id="buttonForQ" layoutX="30.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonQ" prefHeight="50.0" prefWidth="45.0" text="Q">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForW" layoutX="85.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonW" prefHeight="50.0" prefWidth="45.0" text="W">
+            <Button fx:id="buttonForW" layoutX="85.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonW" prefHeight="50.0" prefWidth="45.0" text="W">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForE" layoutX="140.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonE" prefHeight="50.0" prefWidth="45.0" text="E">
+            <Button fx:id="buttonForE" layoutX="140.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonE" prefHeight="50.0" prefWidth="45.0" text="E">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForR" layoutX="195.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonR" prefHeight="50.0" prefWidth="45.0" text="R">
+            <Button fx:id="buttonForR" layoutX="195.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonR" prefHeight="50.0" prefWidth="45.0" text="R">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForT" layoutX="250.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonT" prefHeight="50.0" prefWidth="45.0" text="T">
+            <Button fx:id="buttonForT" layoutX="250.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonT" prefHeight="50.0" prefWidth="45.0" text="T">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForY" layoutX="305.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonY" prefHeight="50.0" prefWidth="45.0" text="Y">
+            <Button fx:id="buttonForY" layoutX="305.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonY" prefHeight="50.0" prefWidth="45.0" text="Y">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForU" layoutX="360.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonU" prefHeight="50.0" prefWidth="45.0" text="U">
+            <Button fx:id="buttonForU" layoutX="360.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonU" prefHeight="50.0" prefWidth="45.0" text="U">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForI" layoutX="415.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonI" prefHeight="50.0" prefWidth="45.0" text="I">
+            <Button fx:id="buttonForI" layoutX="415.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonI" prefHeight="50.0" prefWidth="45.0" text="I">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForO" layoutX="470.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonO" prefHeight="50.0" prefWidth="45.0" text="O">
+            <Button fx:id="buttonForO" layoutX="470.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonO" prefHeight="50.0" prefWidth="45.0" text="O">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForP" layoutX="525.0" layoutY="253.2" mnemonicParsing="false" onAction="#buttonP" prefHeight="50.0" prefWidth="45.0" text="P">
+            <Button fx:id="buttonForP" layoutX="525.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonP" prefHeight="50.0" prefWidth="45.0" text="P">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForA" layoutX="57.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonA" prefHeight="50.0" prefWidth="45.0" text="A">
+            <Button fx:id="buttonForA" layoutX="57.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonA" prefHeight="50.0" prefWidth="45.0" text="A">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForS" layoutX="112.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonS" prefHeight="50.0" prefWidth="45.0" text="S">
+            <Button fx:id="buttonForS" layoutX="112.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonS" prefHeight="50.0" prefWidth="45.0" text="S">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForD" layoutX="167.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonD" prefHeight="50.0" prefWidth="45.0" text="D">
+            <Button fx:id="buttonForD" layoutX="167.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonD" prefHeight="50.0" prefWidth="45.0" text="D">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForF" layoutX="222.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonF" prefHeight="50.0" prefWidth="45.0" text="F">
+            <Button fx:id="buttonForF" layoutX="222.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonF" prefHeight="50.0" prefWidth="45.0" text="F">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForG" layoutX="277.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonG" prefHeight="50.0" prefWidth="45.0" text="G">
+            <Button fx:id="buttonForG" layoutX="277.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonG" prefHeight="50.0" prefWidth="45.0" text="G">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForH" layoutX="332.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonH" prefHeight="50.0" prefWidth="45.0" text="H">
+            <Button fx:id="buttonForH" layoutX="332.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonH" prefHeight="50.0" prefWidth="45.0" text="H">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForJ" layoutX="387.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonJ" prefHeight="50.0" prefWidth="45.0" text="J">
+            <Button fx:id="buttonForJ" layoutX="387.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonJ" prefHeight="50.0" prefWidth="45.0" text="J">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForK" layoutX="442.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonK" prefHeight="50.0" prefWidth="45.0" text="K">
+            <Button fx:id="buttonForK" layoutX="442.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonK" prefHeight="50.0" prefWidth="45.0" text="K">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForZ" layoutX="112.5" layoutY="372.8" mnemonicParsing="false" onAction="#buttonZ" prefHeight="50.0" prefWidth="45.0" text="Z">
+            <Button fx:id="buttonForZ" layoutX="112.0" layoutY="366.0" mnemonicParsing="false" onAction="#buttonZ" prefHeight="50.0" prefWidth="45.0" text="Z">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForX" layoutX="167.5" layoutY="372.8" mnemonicParsing="false" onAction="#buttonX" prefHeight="50.0" prefWidth="45.0" text="X">
+            <Button fx:id="buttonForX" layoutX="167.0" layoutY="366.0" mnemonicParsing="false" onAction="#buttonX" prefHeight="50.0" prefWidth="45.0" text="X">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForC" layoutX="222.5" layoutY="372.8" mnemonicParsing="false" onAction="#buttonC" prefHeight="50.0" prefWidth="45.0" text="C">
+            <Button fx:id="buttonForC" layoutX="222.0" layoutY="366.0" mnemonicParsing="false" onAction="#buttonC" prefHeight="50.0" prefWidth="45.0" text="C">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForV" layoutX="277.5" layoutY="372.8" mnemonicParsing="false" onAction="#buttonV" prefHeight="50.0" prefWidth="45.0" text="V">
+            <Button fx:id="buttonForV" layoutX="277.0" layoutY="366.0" mnemonicParsing="false" onAction="#buttonV" prefHeight="50.0" prefWidth="45.0" text="V">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForB" layoutX="332.5" layoutY="372.8" mnemonicParsing="false" onAction="#buttonB" prefHeight="50.0" prefWidth="45.0" text="B">
+            <Button fx:id="buttonForB" layoutX="332.0" layoutY="366.0" mnemonicParsing="false" onAction="#buttonB" prefHeight="50.0" prefWidth="45.0" text="B">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForN" layoutX="387.5" layoutY="372.8" mnemonicParsing="false" onAction="#buttonN" prefHeight="50.0" prefWidth="45.0" text="N">
+            <Button fx:id="buttonForN" layoutX="387.0" layoutY="366.0" mnemonicParsing="false" onAction="#buttonN" prefHeight="50.0" prefWidth="45.0" text="N">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForM" layoutX="442.5" layoutY="372.8" mnemonicParsing="false" onAction="#buttonM" prefHeight="50.0" prefWidth="45.0" text="M">
+            <Button fx:id="buttonForM" layoutX="442.0" layoutY="366.0" mnemonicParsing="false" onAction="#buttonM" prefHeight="50.0" prefWidth="45.0" text="M">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="buttonForL" layoutX="498.5" layoutY="313.0" mnemonicParsing="false" onAction="#buttonL" prefHeight="50.0" prefWidth="45.0" text="L">
+            <Button fx:id="buttonForL" layoutX="498.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonL" prefHeight="50.0" prefWidth="45.0" text="L">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
@@ -169,23 +169,23 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Label fx:id="labelForTotalPoint" layoutX="14.0" layoutY="457.0" text="Total Point: ">
+            <Label fx:id="labelForTotalPoint" layoutX="14.0" layoutY="464.0" text="Total Point: ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label fx:id="labelForPassedRound" layoutX="14.0" layoutY="436.0" prefHeight="18.0" prefWidth="87.0" text="Passed Round:">
+            <Label fx:id="labelForPassedRound" layoutX="14.0" layoutY="444.0" prefHeight="18.0" prefWidth="87.0" text="Passed Round:">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label fx:id="labelForLevel" contentDisplay="CENTER" layoutX="101.0" layoutY="436.0" prefHeight="18.0" prefWidth="48.0">
+            <Label fx:id="labelForLevel" contentDisplay="CENTER" layoutX="101.0" layoutY="444.0" prefHeight="18.0" prefWidth="48.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label fx:id="labelForScore" layoutX="83.0" layoutY="457.0" prefHeight="18.0" prefWidth="49.0">
+            <Label fx:id="labelForScore" layoutX="83.0" layoutY="464.0" prefHeight="18.0" prefWidth="49.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label fx:id="labelForError" layoutX="14.0" layoutY="479.0" prefHeight="18.0" prefWidth="572.0" />
+            <Label fx:id="labelForError" layoutX="14.0" layoutY="484.0" prefHeight="18.0" prefWidth="572.0" />
             <Button fx:id="buttonHint" layoutX="428.0" layoutY="453.0" mnemonicParsing="false" onAction="#hintTrigger" text="HINT">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -193,5 +193,5 @@
             </Button>
          </children>
       </AnchorPane>
-   </left>
+   </bottom>
 </BorderPane>
