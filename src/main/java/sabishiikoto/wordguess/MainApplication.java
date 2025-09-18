@@ -18,6 +18,7 @@ public class MainApplication extends Application {
         Image image = new Image(getClass().getResource("/assets/scrabble.png").toExternalForm());
         // Image credit: <a href="https://www.flaticon.com/free-icons/scrabble" title="scrabble icons">Scrabble icons created by Febrian Hidayat - Flaticon</a>
         stage.getIcons().add(image);
+        stage.setResizable(false);
         stage.show();
     }
 
